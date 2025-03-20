@@ -15,11 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Tests...'
-<<<<<<< HEAD
-                    sh './output'  // Execute compiled binary
-=======
                     sh './non_existent_binary'  // Intentional error: File does not exist
->>>>>>> 6ba87d4 (Introduced error in Test stage to verify failure handling)
                 }
             }
         }
@@ -40,7 +36,4 @@ pipeline {
         }
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 6ba87d4 (Introduced error in Test stage to verify failure handling)
