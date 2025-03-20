@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Tests...'
-                    sh './output'  // Execute compiled binary
+                    sh './non_existent_binary'  // Intentional error: File does not exist
                 }
             }
         }
